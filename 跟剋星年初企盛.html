@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高雄週末行程</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Comic Neue', sans-serif;
+            background: url('https://k.sinaimg.cn/n/sinacn10107/233/w667h366/20190928/f1cb-ifffqup4604651.jpg/w700d1q75cms.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+            padding: 30px;
+            background: rgba(47, 128, 237, 0.85);
+            color: white;
+            border-bottom: 5px solid #81d4fa;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #0288d1;
+            border-bottom: 2px solid #0288d1;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            position: relative;
+            background-color: #f1f8e9;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #0288d1;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        li:hover {
+            transform: translateX(10px);
+            background-color: #e0f7fa;
+        }
+        li:hover .hover-img {
+            display: block;
+        }
+        .hover-img {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 102%;
+            max-width: 200px;
+            border: 4px solid #ccc;
+            border-radius: 5px;
+            transform: translateY(-50%);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(47, 128, 237, 0.85);
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:visited {
+            color: inherit;
+        }
+        a:hover {
+            color: #46A3FF;
+        }
+        a:active {
+            color: inherit;
+        }
+        .expandable {
+            cursor: pointer;
+        }
+        .expandable::after {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-image: url('https://img.mksucai.com/00/20/94/25c13b35eaebd043.webp');
+            background-size: cover;
+            margin-left: 10px;
+        }
+        .expandable.open::after {
+            transform: rotate(180deg);
+        }
+        .expandable-content {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .expandable-content li {
+            background-color: #e8f5e9;
+            border-left: 5px solid #66bb6a;
+        }
+        .expandable2 {
+            cursor: pointer;
+        }
+        .expandable2::after {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-image: url('https://img.mksucai.com/00/20/94/25c13b35eaebd043.webp');
+            background-size: cover;
+            margin-left: 10px;
+        }
+        .expandable2.open::after {
+            transform: rotate(180deg);
+        }
+        .expandable2-content {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .expandable2-content li {
+            background-color: #e8f5e9;
+            border-left: 5px solid #66bb6a;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const expandables = document.querySelectorAll(".expandable");
+            expandables.forEach(expandable => {
+                expandable.addEventListener("click", function() {
+                    const content = this.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                    this.classList.toggle("open");
+                });
+            });
+
+            const expandables2 = document.querySelectorAll(".expandable2");
+            expandables2.forEach(expandable2 => {
+                expandable2.addEventListener("click", function() {
+                    const content = this.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                    this.classList.toggle("open");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>高雄週末行程</h1>
+        </header>
+        <section>
+            <h2>週六</h2>
+            <ul>
+                <li>
+                    23:00 到達高雄
+                </li>
+                <li>
+                    <a href="https://yuyufamilylab.com/seafoodrice/" target="_blank">23:30 晚餐：七賢 香味海產粥</a>
+                    <img src="https://www.tiffany0118.com/wp-content/uploads/20180902035727_97.jpg" alt="food" class="hover-img">
+                </li>
+                <li>
+                    <a href="https://smiletaiwan.cw.com.tw/article/6895" target="_blank">00:30 旗津渡輪夜景</a>
+                    <img src="https://storage.googleapis.com/smiletaiwan-cms-cwg-tw/article/202312/article-657954302c9d5.jpg" alt="ferry" class="hover-img">
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>週日</h2>
+            <ul>
+                <li class="expandable">
+                    08:00 早餐: 有四個可以選
+                    <span class="arrow"></span>
+                </li>
+                <ul class="expandable-content">
+                    <li>
+                        <a href="https://www.foodtigertw.com/blog/post/50266144" target="_blank">郭家滷肉飯</a>
+                        <img src="https://live.staticflickr.com/65535/52600405858_637f86a161_z.jpg" alt="breakfast" class="hover-img">
+                    </li>
+                    <li>
+                        <a href="https://www.tiffany0118.com/dandan/" target="_blank">北部人來南部必吃丹丹漢堡</a>
+                        <img src="https://www.tiffany0118.com/wp-content/uploads/%E4%B8%B9%E4%B8%B9%E6%BC%A2%E5%A0%A1-0104.jpg" alt="option1" class="hover-img">
+                    </li>
+                    <li>
+                        <a href="https://www.bobblog.tw/now-andt-hen-by-nybc-brunch/" target="_blank">NOW & THEN by nybc 駁二店早午餐</a>
+                        <img src="https://img.bobblog.tw/2019/taiwan/new-taipei-city/Jin-Bao-Hotel/NOW-and-THEN-by-nybc-31.jpg" alt="option2" class="hover-img">
+                    </li>
+                    <li>
+                        <a href="https://springhappylife.tw/cienjin-rice/" target="_blank">前金肉燥飯</a>
+                        <img src="https://springhappylife.tw/wp-content/uploads/2023/02/20230217-01-32.jpg" alt="option3" class="hover-img">
+                    </li>
+                </ul>
+                <li>
+                    <a href="https://www.kkday.com/zh-tw/blog/54966/asia-taiwan-kaohsiung-pier2-art-center" target="_blank">09:00 駁二藝術特區</a>
+                    <img src="https://khh.travel/content/images/Attractions/37668/attractions-image-5uefqlz9iuin3ttpnalzea.jpg" alt="art" class="hover-img">
+                </li>
+                <li>
+                    <a href="https://jumptiger22.pixnet.net/blog/post/226600552-%E6%B5%B7%E6%BF%B1%E6%B5%B7%E7%94%A2" target="_blank">12:00 午餐：旗津海產</a>
+                    <img src="https://pic.pimg.tw/jumptiger22/1687607568-2073774394-g_n.jpg" alt="seafood" class="hover-img">
+                </li>
+                <li>
+                    <a href="https://bunnyann.com/blog-post_20-6/" target="_blank">14:00 旗津吃冰</a>
+                    <img src="https://bunnyann.com/wp-content/uploads/20200727140907_87.jpg" alt="ice" class="hover-img">
+                </li>
+                <li>
+                    <a href="https://hoolee.tw/khlighthouse/" target="_blank">16:00 高雄燈塔</a>
+                    <img src="https://i0.wp.com/hoolee.tw/wp-content/uploads/20220910121057_82.jpg" alt="lighthouse" class="hover-img">
+                </li>
+                <li>
+                    <a href="https://letsplay.tw/ya-rou-zhen23/" target="_blank">18:00 晚餐：鴨肉珍</a>
+                    <img src="https://letsplay.tw/wp-content/uploads/2023/09/1P6A4505.jpg" alt="duck" class="hover-img">
+                </li>
+                <li>
+                    19:00 唱歌
+                </li>
+                <li>
+                    <a href="https://bobby.tw/2021-03-29-2027/" target="_blank">23:00 壽山夜景</a>
+                    <img src="https://bobby.tw/wp-content/uploads/pixnet/7376b75c01f437484a1474a882e81b91.jpg" alt="nightview" class="hover-img">
+                </li>
+                <li>
+                    <a href="https://stancyteacher.tw/50-years/" target="_blank">24:00 五十年杏仁茶(但我們不喝杏仁茶 可以吃很猛的餐包 還有其他也都好吃喔)</a>
+                    <img src="https://stancyteacher.tw/wp-content/uploads/2023/02/batch_DSC05068.webp" alt="nightview" class="hover-img">
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>週一</h2>
+            <ul>
+                <li class="expandable2">
+                    08:00 早餐: 有四個可以選
+                    <span class="arrow"></span>
+                </li>
+                <ul class="expandable2-content">
+                    <li>
+                        <a href="https://www.foodtigertw.com/blog/post/50266144" target="_blank">郭家滷肉飯</a>
+                        <img src="https://live.staticflickr.com/65535/52600405858_637f86a161_z.jpg" alt="breakfast" class="hover-img">
+                    </li>
+                    <li>
+                        <a href="https://www.tiffany0118.com/dandan/" target="_blank">北部人來南部必吃丹丹漢堡</a>
+                        <img src="https://www.tiffany0118.com/wp-content/uploads/%E4%B8%B9%E4%B8%B9%E6%BC%A2%E5%A0%A1-0104.jpg" alt="option1" class="hover-img">
+                    </li>
+                    <li>
+                        <a href="https://www.bobblog.tw/now-andt-hen-by-nybc-brunch/" target="_blank">NOW & THEN by nybc 駁二店早午餐</a>
+                        <img src="https://img.bobblog.tw/2019/taiwan/new-taipei-city/Jin-Bao-Hotel/NOW-and-THEN-by-nybc-31.jpg" alt="option2" class="hover-img">
+                    </li>
+                    <li>
+                        <a href="https://springhappylife.tw/cienjin-rice/" target="_blank">前金肉燥飯</a>
+                        <img src="https://springhappylife.tw/wp-content/uploads/2023/02/20230217-01-32.jpg" alt="option3" class="hover-img">
+                    </li>
+                </ul>
+                <li>
+                    <a href="https://smiletaiwan.cw.com.tw/article/6640" target="_blank">09:00 內惟美術館</a>
+                    <img src="https://cw-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fstorage.googleapis.com%2Fsmiletaiwan-cms-cwg-tw%2Fckeditor%2F202309%2Fckeditor-65114d8ecb262.jpg/" alt="museum" class="hover-img">
+                </li>
+                <li>
+                    12:00 返回台北
+                </li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>祝您有一個愉快的高雄之旅！</p>
+    </footer>
+</body>
+</html>
